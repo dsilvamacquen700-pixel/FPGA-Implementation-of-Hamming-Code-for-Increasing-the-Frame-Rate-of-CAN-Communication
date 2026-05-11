@@ -1,0 +1,1 @@
+# FPGA-Implementation-of-Hamming-Code-for-Increasing-the-Frame-Rate-of-CAN-Communication
