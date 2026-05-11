@@ -50,6 +50,10 @@ always @(posedge clk or posedge rst) begin
 end
 endmodule
 
+module parity_gen(input [3:0] d, output p);
+assign p = d[0]^d[1]^d[2]^d[3];
+endmodule
+
 module syndrome(input [6:0] r, output [2:0] s);
 assign s[0] = r[0]^r[2]^r[4]^r[6];
 assign s[1] = r[1]^r[2]^r[5]^r[6];
