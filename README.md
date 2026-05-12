@@ -23,6 +23,7 @@
 - [Literature Review](#literature-review)
 - [Proposed System Design](#proposed-system-design)
 - [Leaf Cell Designs](#leaf-cell-designs)
+- [Formula](#formula-used)
 - [Simulation Results](#simulation-results)
 - [Tools Used](#tools-used)
 - [References](#references)
@@ -174,6 +175,15 @@ Each fundamental hardware block is independently designed, optimized, and simula
 - **Optimization:** Parallel XOR computation, optimized H-matrix mapping, critical path reduction
 
 ---
+## Formula used
+R(x)=H^(−1)(C(T(H(D))))
+  D= Input Data 
+  H(D)= Hamming Encoding 
+  T= CAN Transmission 
+  C= CAN Reception and CRC checking 
+  H^(-1)= Hamming Decoding and Error Correction 
+  R(x)= Corrected Received Data
+
 
 ## Simulation Results
 
